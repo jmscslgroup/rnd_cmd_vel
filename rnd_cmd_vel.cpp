@@ -7,9 +7,9 @@
 //
 // Code generated for Simulink model 'rnd_cmd_vel'.
 //
-// Model version                  : 1.9
+// Model version                  : 1.8
 // Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
-// C/C++ source code generated on : Fri Jun 11 19:08:14 2021
+// C/C++ source code generated on : Sun Jun 13 02:55:24 2021
 //
 // Target selection: ert.tlc
 // Embedded hardware selection: Generic->Unspecified (assume 32-bit Generic)
@@ -80,12 +80,12 @@ void rnd_cmd_vel_initialize(void)
 {
   {
     int32_T i;
-    char_T b_zeroDelimTopic_0[13];
-    char_T b_zeroDelimTopic[9];
-    static const char_T tmp[8] = { '/', 'c', 'm', 'd', '_', 'v', 'e', 'l' };
+    char_T b_zeroDelimTopic_0[12];
+    char_T b_zeroDelimTopic[8];
+    static const char_T tmp[7] = { 'c', 'm', 'd', '_', 'v', 'e', 'l' };
 
-    static const char_T tmp_0[12] = { '/', 'r', 'n', 'd', '_', 'c', 'm', 'd',
-      '_', 'v', 'e', 'l' };
+    static const char_T tmp_0[11] = { 'r', 'n', 'd', '_', 'c', 'm', 'd', '_',
+      'v', 'e', 'l' };
 
     // SystemInitialize for Atomic SubSystem: '<Root>/Subscribe'
     // SystemInitialize for Enabled SubSystem: '<S4>/Enabled Subsystem'
@@ -99,11 +99,11 @@ void rnd_cmd_vel_initialize(void)
     // Start for MATLABSystem: '<S4>/SourceBlock'
     rnd_cmd_vel_DW.obj_n.matlabCodegenIsDeleted = false;
     rnd_cmd_vel_DW.obj_n.isInitialized = 1;
-    for (i = 0; i < 8; i++) {
+    for (i = 0; i < 7; i++) {
       b_zeroDelimTopic[i] = tmp[i];
     }
 
-    b_zeroDelimTopic[8] = '\x00';
+    b_zeroDelimTopic[7] = '\x00';
     Sub_rnd_cmd_vel_1.createSubscriber(&b_zeroDelimTopic[0], 1);
     rnd_cmd_vel_DW.obj_n.isSetupComplete = true;
 
@@ -114,11 +114,11 @@ void rnd_cmd_vel_initialize(void)
     // Start for MATLABSystem: '<S3>/SinkBlock'
     rnd_cmd_vel_DW.obj.matlabCodegenIsDeleted = false;
     rnd_cmd_vel_DW.obj.isInitialized = 1;
-    for (i = 0; i < 12; i++) {
+    for (i = 0; i < 11; i++) {
       b_zeroDelimTopic_0[i] = tmp_0[i];
     }
 
-    b_zeroDelimTopic_0[12] = '\x00';
+    b_zeroDelimTopic_0[11] = '\x00';
     Pub_rnd_cmd_vel_4.createPublisher(&b_zeroDelimTopic_0[0], 1);
     rnd_cmd_vel_DW.obj.isSetupComplete = true;
 

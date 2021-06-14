@@ -4,7 +4,7 @@
   <description>
   This package is generated from rnd_cmd_vel Simulink model.
   </description>
-  <maintainer email="rosuser@test.com">ROS User</maintainer>
+  <maintainer email="rosuser@test.com">Safwan Elmadani</maintainer>
   <license>BSD</license>
 
   <buildtool_depend>catkin</buildtool_depend>
